@@ -1,0 +1,41 @@
+/* Por ejemplo, en src/App.css */
+@import url("./styles/variables.css");
+
+body {
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+}
+.navbar-nav .nav-link {
+  color: var(--bs-color-morado);
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--bs-color-rojo); /* Color de hover personalizado */
+}
+
+.btn-outline-success {
+  color: var(--bs-secondary-bg);
+  border-color: var(--bs-color-rojo);
+  background-color:var(--bs-color-rojo);
+}
+.btn-outline-success:hover {
+  color: var(--bs-secondary-bg);
+  border-color: var(--bs-color-rojo);
+  background-color:var(--bs-color-rojo);;
+}
+.banner.container-fluid{
+  background-color: var(--bs-color-morado);
+  color: var(--bs-body-line-height);
+  color: aliceblue;
+  .img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:  var(--bs-color-rojo);
+    font-size: 50px;
+  }
+}
