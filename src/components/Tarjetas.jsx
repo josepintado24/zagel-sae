@@ -7,6 +7,10 @@ import card2Front from '../img/card2-a.jpeg';
 import card2Back from '../img/card2-b.jpeg';
 import card3Front from '../img/card3-a.jpeg';
 import card3Back from '../img/card3-b.jpeg';
+import card4Front from '../img/card4-a.jpeg';
+import card4Back from '../img/card4-b.jpeg';
+import card5Front from '../img/card5-a.jpeg';
+import card5Back from '../img/card5-b.jpeg';
 
 function CardSection() {
   const cards = [
@@ -22,6 +26,14 @@ function CardSection() {
         frontImage: card3Front,
         backImage: card3Back,
     },
+    {
+      frontImage: card4Front,
+      backImage: card4Back,
+  },
+  {
+    frontImage: card5Front,
+    backImage: card5Back,
+},
   ];
 
   return (

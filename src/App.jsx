@@ -12,7 +12,7 @@ function App() {
       <Header />
       <Banner />
       <Tarjetas />
-      <main className="container mt-5">
+      {/* <main className="container mt-5">
         <div className="row">
           <div className="col">
             <h2>Sección 1</h2>
@@ -23,7 +23,7 @@ function App() {
             <p>Este es un párrafo en la segunda sección.</p>
           </div>
         </div>
-      </main>
+      </main> */}
     </div>
   );
 }

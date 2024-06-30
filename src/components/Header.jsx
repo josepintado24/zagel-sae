@@ -1,11 +1,13 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 function Header() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container">
         <a className="navbar-brand" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="51" height="56" viewBox="0 0 51 56" fill="none">
           <svg xmlns="http://www.w3.org/2000/svg" width="51" height="56" viewBox="0 0 51 56" fill="none">
               <path d="M43.5543 24.0708H31.4757V36.1494H43.5543V24.0708Z" fill="#FE004E"></path>
               <path d="M7.24832 0V12.0786H23.0024L7.24292 27.7086L15.6084 36.1442C15.6084 36.1442 41.741 10.2436 41.9245 10.0493C43.1388 8.75405 44.2452 6.34695 43.0633 3.58905C42.1566 1.468 40.1381 0.188897 37.9091 0.0215883C37.758 0.0107941 37.6014 0.00539707 37.4449 0.00539707H7.24832V0Z" fill="#FE004E"></path>
@@ -15,12 +17,16 @@ function Header() {
               <path d="M42.2915 52.5513C41.5305 54.6778 39.6091 56 37.4341 56C34.5359 56 32.3285 53.7333 32.3285 50.8728C32.3285 48.0124 34.5359 45.7456 37.337 45.7456C40.1381 45.7456 42.2645 47.8936 42.2645 50.8135C42.2645 51.0509 42.2645 51.31 42.2267 51.5475H34.5197C34.7788 53.1558 35.8906 54.0679 37.4395 54.0679C38.6593 54.0679 39.5822 53.4634 40.0301 52.5459H42.2969L42.2915 52.5513ZM34.5737 49.9391H40.0193C39.8412 48.6061 38.805 47.6562 37.3154 47.6562C35.9445 47.6562 34.8921 48.5089 34.5737 49.9391Z" fill="#FE004E"></path>
               <path d="M31.1357 50.4411H30.4125H25.9599V52.0494H28.7448C28.3238 53.1882 27.2822 53.933 25.9707 53.933C24.2437 53.933 22.9699 52.6431 22.9699 50.8728C22.9699 49.1026 24.2437 47.8127 25.9707 47.8127C27.0285 47.8127 27.9083 48.2984 28.4318 49.0756L30.1642 47.8181C29.2252 46.5498 27.7086 45.7456 25.9707 45.7456C23.0509 45.7456 20.7679 47.9908 20.7679 50.8728C20.7679 53.7549 23.0509 56 25.9707 56C28.8905 56 31.1573 53.7549 31.1573 50.8728C31.1573 50.7271 31.1519 50.5814 31.1357 50.4411Z" fill="#FE004E"></path>
           </svg>
+          </svg>
         </a>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
+        <div className="d-flex">
+          <button className="btn btn-outline-success me-2" type="button">Iniciar Sesión</button>
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+        </div>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav me-S mb-2 mb-lg-0">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <a className="nav-link active" aria-current="page" href="#">Home</a>
             </li>
@@ -31,7 +37,6 @@ function Header() {
               <a className="nav-link" href="#">Foros</a>
             </li>
           </ul>
-          <button className="btn btn-outline-success" type="button">Iniciar Sesión</button>
         </div>
       </div>
     </nav>

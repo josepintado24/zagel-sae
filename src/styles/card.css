@@ -1,9 +1,17 @@
 .flip-box {
-    background-color: transparent;
-    width: 100%;
-    height: 200px;
-    perspective: 1000px;
+  background-color: transparent;
+  width: 100%;
+  height: 400px; /* Ajusta la altura según sea necesario */
+  perspective: 1000px;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 576px) {
+  .flip-box {
+    height: 200px; /* Ajusta la altura para pantallas pequeñas */
+    margin-bottom: 0;
   }
+}
   
   .flip-box-inner {
     position: relative;
